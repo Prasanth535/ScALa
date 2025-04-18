@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Savirigana Prasanth</h1>
+                <h2>Agronomy Researcher & Data Scientist</h2>
+                <p>M.Sc. Agronomy student with expertise in crop management, hydroponics, and data analysis.</p>
+                <div class="cta-buttons">
+                    <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+                    <a href="#contact" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Savirigana Prasanth">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="highlights">
+    <div class="container">
+        <div class="highlight-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Agronomy Expertise</h3>
+            <p>Crop management, hydroponics, and sustainable agriculture</p>
+        </div>
+        <div class="highlight-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Technical Skills</h3>
+            <p>Python, R, APSIM, Machine Learning</p>
+        </div>
+        <div class="highlight-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Research Focus</h3>
+            <p>Agricultural technology and data-driven solutions</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

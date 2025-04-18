@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Savirigana Prasanth">
+            </div>
+            <div class="about-text">
+                <p>M.Sc. Agronomy student with expertise in crop management, hydroponics, and data analysis. Skilled in Python, R, and APSIM, with hands-on experience in agricultural research and machine learning. Passionate about advancing sustainable agriculture using innovative technologies.</p>
+                
+                <div class="personal-info">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li><strong>Email:</strong> saviriganaprasanth2826@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 9347945552</li>
+                        <li><strong>Address:</strong> Pathapatnam, Srikakulam, A.P- 532213, INDIA</li>
+                        <li><strong>LinkedIn:</strong> linkedin.com/in/savirigana-prasanth-1552701a7</li>
+                    </ul>
+                </div>
+                
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-categories">
+                        <div class="skill-category">
+                            <h4>Agronomy</h4>
+                            <ul>
+                                <li>Agronomical crop management</li>
+                                <li>Nutrient management</li>
+                                <li>Weed management</li>
+                                <li>Hydroponics and protected cultivation</li>
+                                <li>Crop Modelling (APSIM, DSSAT)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Technical</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>R Programming</li>
+                                <li>Machine learning and AI</li>
+                                <li>Data Analysis & visualization</li>
+                                <li>Excel, Power BI</li>
+                                <li>Web Development</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Time management</li>
+                                <li>Teamwork & collaboration</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
